@@ -1,6 +1,6 @@
 # Path-Finder
 
-**Path-Finder** is a visualization tool that shows how path-finding algorithms works on a 2D grid.
+**Path-Finder** is a visualization tool that shows how path-finding algorithms work on a 2D grid.
 
 Submitted by: **Mykhailo Ivaniuk**
 
