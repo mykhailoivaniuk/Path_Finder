@@ -48,11 +48,13 @@ def main(screen, width):
                     for row in grid:
                         for square in row:
                             square.update_adjacent(grid)
+                    pygame.display.set_caption("A* Path-Finding Algorithm")
                     a_star(lambda: draw(screen,grid,ROWS,width),grid,start,end)
                 if event.key == pygame.K_d and start and end:
                     for row in grid:
                         for square in row:
                             square.update_adjacent(grid)
+                    pygame.display.set_caption("Dijkstra's Path-Finding Algorithm")
                     Dijkstras(lambda: draw(screen,grid,ROWS,width),grid,start,end)
                 if event.key == pygame.K_c:
                     start = None

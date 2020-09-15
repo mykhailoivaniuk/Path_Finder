@@ -6,7 +6,7 @@ from Path_Finder.Square_class import Square, WHITE, GREY
 
 WIDTH = 800
 screen = pygame.display.set_mode((WIDTH,WIDTH))
-pygame.display.set_caption("A* Path-Finding Algorithm")
+pygame.display.set_caption("Path-Finder Visualization")
 
 def make_grid(rows,width):
     grid = []
