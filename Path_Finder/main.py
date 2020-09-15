@@ -57,10 +57,13 @@ def main(screen, width):
                     pygame.display.set_caption("Dijkstra's Path-Finding Algorithm")
                     Dijkstras(lambda: draw(screen,grid,ROWS,width),grid,start,end)
                 if event.key == pygame.K_c:
+                    pygame.display.set_caption("Path-Finder Visualization")
                     start = None
                     end = None
                     grid = make_grid(ROWS,width)
+
                 if event.key == pygame.K_m:
+                    pygame.display.set_caption("Path-Finder Visualization")
                     grid = make_grid(ROWS, width)
                     start,end = generate_obstacle_map(grid)
 
