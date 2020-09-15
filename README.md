@@ -4,8 +4,6 @@
 
 Submitted by: **Mykhailo Ivaniuk**
 
-Time spent: **72** hours spent in total
-
 This is interactive visualization tool. Implemented features are available to user:
 
 * [X] Choosing a starting place. To do that click on the empty board to set up start point, yellow square will appear indicating location of desired start
