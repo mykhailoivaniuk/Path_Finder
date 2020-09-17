@@ -11,6 +11,7 @@ This is interactive visualization tool. Implemented features are available to us
 * [X] Creating obstacles. Once user created start and end, they can make obstacles(black squares) by clicking on the grid.
 * [X] Starting visualization for **A*** algorithm. Press **Space** button to start visualization
 * [X] Starting visualization for **Dijkstra's** algorithm. Press button **'D'** to start visualization
+* [X] Starting visualization for **BFS** algorithm. Press button **'B'** to start visualization
 * [X] Erasing start point, end point and obstacles. In order to manually erase anything press with two fingers on your Mac touchpad(right click for Windows)
 * [X] Complete reset of the grid. To do so press **'C'** on the keyboard
 * [X] Generating an obstacle map with predefined start and end positions. Press **M** on the keyboard and this map will appear.
