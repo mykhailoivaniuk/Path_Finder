@@ -19,7 +19,7 @@ def Dijkstras(draw,grid,start,end):
                 pygame.quit()
         current = to_do.get()[2]
         if current == end:
-            reconstruct_path(pred,current,draw)
+            reconstruct_path(pred,current,draw,start)
             end.make_end()
             start.make_start()
             return True
@@ -71,7 +71,7 @@ def a_star(draw,grid, start,end):
         open_set_hash.remove(current)
 
         if current == end:
-            reconstruct_path(came_from,end,draw)
+            reconstruct_path(came_from,end,draw,start)
             end.make_end()
             start.make_start()
             return True
@@ -91,4 +91,29 @@ def a_star(draw,grid, start,end):
 
         if current != start:
             current.make_closed()
+    return False
+
+def BFS(draw,grid,start,end):
+    pred = {spot: None for row in grid for spot in row}
+    to_do = Queue()
+    pred[start] = None
+    to_do.put(start)
+    while not to_do.empty():
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+        current = to_do.get()
+        for neighbor in current.adjacent:
+            if pred[neighbor] == None:
+                pred[neighbor] = current
+                to_do.put(neighbor)
+                neighbor.make_open_BFS()
+        if current == end:
+            reconstruct_path(pred,current,draw,start)
+            end.make_end()
+            start.make_start()
+            return True
+        draw()
+        if current != start:
+            current.make_closed_BFS()
     return False

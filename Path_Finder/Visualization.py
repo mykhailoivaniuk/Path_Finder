@@ -60,8 +60,8 @@ def mouse_position(pos,rows,width):
     col = x//gap
     return row,col
 
-def reconstruct_path(came_from, current, draw):
-    while current in came_from :
+def reconstruct_path(came_from, current, draw,start):
+    while current in came_from and current != start :
         current = came_from[current]
         if current == None:
             return

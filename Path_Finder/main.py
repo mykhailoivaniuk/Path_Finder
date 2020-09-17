@@ -1,5 +1,5 @@
 import pygame
-from Path_Finder.Algorithms import a_star,Dijkstras
+from Path_Finder.Algorithms import a_star,Dijkstras, BFS
 from Path_Finder.Visualization import make_grid,draw_grid, draw, mouse_position, reconstruct_path, generate_obstacle_map, screen
 from Path_Finder.Square_class import Square
 
@@ -56,6 +56,12 @@ def main(screen, width):
                             square.update_adjacent(grid)
                     pygame.display.set_caption("Dijkstra's Path-Finding Algorithm")
                     Dijkstras(lambda: draw(screen,grid,ROWS,width),grid,start,end)
+                if event.key == pygame.K_b and start and end:
+                    for row in grid:
+                        for square in row:
+                            square.update_adjacent(grid)
+                    pygame.display.set_caption("BFS Path-Finding Algorithm")
+                    BFS(lambda: draw(screen,grid,ROWS,width),grid,start,end)
                 if event.key == pygame.K_c:
                     pygame.display.set_caption("Path-Finder Visualization")
                     start = None

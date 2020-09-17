@@ -44,6 +44,12 @@ class Square:
     def make_open_D(self):
         self.color = YELLOW
 
+    def make_open_BFS(self):
+        self.color = YELLOW
+
+    def make_closed_BFS(self):
+        self.color = DARK_GREEN
+
     def make_obstacle(self):
         self.color = BLACK
 
@@ -84,7 +90,7 @@ PURPLE = (128,0,128)
 BLACK = (0,0,0)
 GREY = (128,128,128)
 WHITE = (255,255,255)
-FAN = (200,10,46)
+DARK_GREEN= (0,100,0)
 ORANGE = (255,140,0)
 LIGHT_BLUE = (173,216,230)
 CORAL = (240,128,128)
