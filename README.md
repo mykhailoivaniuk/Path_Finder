@@ -23,9 +23,9 @@ This is interactive visualization tool. Implemented features are available to us
 ## Video Walkthrough 
 
 Here's a walkthrough of some of the implemented features. 
-First, the obstacle map was generated, then **A*** visualization started.
+The Algorithm that is shown on video walkthrough is **A***
 
-<img src='http://g.recordit.co/cBw7J8AWk9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/gRNf9xO2an.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
